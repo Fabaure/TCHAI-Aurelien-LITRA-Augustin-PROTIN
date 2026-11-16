@@ -3,8 +3,8 @@
 **Projet réalisé dans le cadre du module "Chaîne des transactions" à Polytech Dijon.**
 
 ## Auteurs
-*   **[Aurélien LITRA]**
-*   **[Augustin PROTIN]**
+*   **[Aurélien LITRA]** **aurelien_litra@etu.ube.fr**
+*   **[Augustin PROTIN]** **augustin_prtin@etu.ube.fr**
 
 ---
 
