@@ -55,9 +55,9 @@ Le système expose les routes HTTP suivantes :
 Cette section détaille les vulnérabilités identifiées et corrigées au cours des différentes versions du système, ainsi que les scripts disponibles dans le dossier `/tests`.
 
 ### Tchaî v1 : Attaque par modification (Exercice 4)
-*   **Description de l'attaque :** Modification directe du montant d'une transaction dans la base de données/fichier.
-*   **Script de test :** `tests/attack_v1_modify.py` ou description manuelle.
-*   **Résultat :** L'attaque réussit car le système n'a aucun moyen de vérifier si les données ont été altérées a posteriori.
+*   **Description de l'attaque :** En modifiant la valeurs directement dans la BDD , on peut artificiellement changer la valeure de son compte, pratique 
+*   **Consequences :** Lors d'un appel http get sur la consultation du solde, il renvoie le solde fausse
+*   **Résultat :** L'attaque réussit car le système n'a aucun moyen de vérifier si les données ont été altérées a posteriori. c'est vulnerable.
 
 ### Tchaî v2 : Attaque par suppression (Exercice 8)
 *   **Description de l'attaque :** Suppression directe d'une ligne de transaction dans le registre. 
