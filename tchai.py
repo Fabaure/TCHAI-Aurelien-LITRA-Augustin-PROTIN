@@ -44,10 +44,15 @@ def get_balance(personne):
             
     return jsonify({"personne": personne, "solde": solde}), 200
 
-
-def save_transactions_to_file(transactions, filename="transactions.txt"):
+@app.route('/save/transactions', methods=['POST'])
+def save_transactions_to_file():
+    data = request.get_json()
+    transactions_list = data.get("transactions", [])
+    filename = data.get("filename", "transactions.txt")
+    
     with open(filename, "w") as f:
         f.write(str(transactions))
+
 
 
 if __name__ == '__main__':
