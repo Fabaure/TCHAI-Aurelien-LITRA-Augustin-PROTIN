@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 import time
+import json
 
 app = Flask(__name__)
 
@@ -43,5 +44,12 @@ def get_balance(personne):
             
     return jsonify({"personne": personne, "solde": solde}), 200
 
+
+def save_transactions_to_file(transactions, filename="transactions.txt"):
+    with open(filename, "w") as f:
+        f.write(str(transactions))
+
+
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
+
