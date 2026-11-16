@@ -33,7 +33,7 @@ Conformément aux consignes du TP, voici la documentation de nos choix technique
    ```
 3. Lancer le serveur (par défaut sur `http://127.0.0.1:5000`) :
    ```bash
-   python app.py
+   python tchai.py
    ```
 
 ---
