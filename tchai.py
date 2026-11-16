@@ -24,24 +24,17 @@ def sauvegarder_transactions():
 # Initialisation de la liste au démarrage du serveur
 transactions = charger_transactions()
 
-def hash_transaction(P1, P2, t, a):
-    """Génère un hash simple pour une transaction."""
-    chaine = f"{P1}{P2}{t}{a}"
-    return hashlib.sha256(chaine.encode("UTF-8")).hexdigest()
 
 # (A1) Enregistrer une transaction
 @app.route('/transactions', methods=['POST'])
 def add_transaction():
     data = request.get_json()
-
-    hash = hash_transaction(data.get('P1'), data.get('P2'), data.get('t'), data.get('a'))
-
+    
     transaction = {
         "P1": data.get("P1"),
         "P2": data.get("P2"),
         "t": time.time(),
-        "a": data.get("a"),
-        "h": hash
+        "a": data.get("a")
     }
     
     transactions.append(transaction)
