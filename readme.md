@@ -3,8 +3,8 @@
 **Projet réalisé dans le cadre du module "Chaîne des transactions" à Polytech Dijon.**
 
 ## Auteurs
-*   **[Prénom1 Nom1]** - [adresse.email1@exemple.com]
-*   **[Prénom2 Nom2]** - [adresse.email2@exemple.com]
+*   **[Aurélien LITRA]**
+*   **[Augustin PROTIN]**
 
 ---
 
@@ -16,16 +16,16 @@ L'objectif de ce projet est de concevoir un système de transactions électroniq
 Conformément aux consignes du TP, voici la documentation de nos choix techniques :
 
 *   **Langage de programmation :** Python 3
-*   **Framework Web :** Flask *(Justification : Léger, facile à mettre en place pour des API HTTP RESTful)*
-*   **Stockage des données :** SQLite / Fichier JSON *(Remplacez par votre choix et justifiez-le ici)*
-*   **Fonction de hachage :** SHA-256 *(Justification : Standard cryptographique robuste, utilisé notamment dans Bitcoin)*
+*   **Framework Web :** Flask 
+*   **Stockage des données :** SQLite / Fichier JSON 
+*   **Fonction de hachage :** SHA-256 
 
 ## 🚀 Installation et Lancement
 
 1. Cloner le dépôt :
    ```bash
    git clone [URL_DE_VOTRE_DEPOT]
-   cd TCHAI-[VOS-NOMS]
+   cd TCHAI-Aurelien-LITRA-Augustin-PROTIN
    ```
 2. Installer les dépendances :
    ```bash
